@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TEWordsActivity">
+
+    <ImageView
+        android:id="@+id/leftbtn"
+        android:layout_width="122dp"
+        android:layout_height="116dp"
+        android:layout_marginStart="2dp"
+
+        android:layout_marginEnd="160dp"
+        android:onClick="leftbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rightbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/left" />
+
+    <ImageView
+        android:id="@+id/rightbtn"
+        android:layout_width="102dp"
+        android:layout_height="93dp"
+        android:layout_marginEnd="15dp"
+        android:onClick="rightbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/leftbtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/right" />
+
+    <TextView
+        android:id="@+id/tWords"
+        android:layout_width="366dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginBottom="371dp"
+        android:text="Türkçe"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/eWords"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/eWords"
+        android:layout_width="331dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="139dp"
+        android:text="English"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tWords" />
+
+    <Button
+        android:id="@+id/showBtn"
+        android:layout_width="148dp"
+        android:layout_height="136dp"
+        android:background="@drawable/rounded_button"
+        android:text="SHOW"
+        android:textColor="#fff"
+        android:textSize="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/eWords"
+        app:layout_constraintEnd_toStartOf="@+id/rightbtn"
+        app:layout_constraintStart_toEndOf="@+id/leftbtn"
+        app:layout_constraintTop_toBottomOf="@+id/tWords" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
